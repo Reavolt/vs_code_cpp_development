@@ -17,6 +17,7 @@ AllowShortLambdasOnASingleLine: All
 AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: false
 AlwaysBreakTemplateDeclarations: Yes
+AlignConsecutiveBitFields: true #verison 11+
 BinPackArguments: false
 BinPackParameters: false
 BraceWrapping:
@@ -31,7 +32,9 @@ BraceWrapping:
   AfterUnion: true
   AfterExternBlock: true
   BeforeCatch: true
+  BeforeWhile: true # version 11+
   BeforeElse: true
+  BeforeLambdaBody: true # version 11+
   IndentBraces: false
   SplitEmptyFunction: true
   SplitEmptyRecord: true
@@ -71,6 +74,8 @@ IncludeBlocks: Regroup
 
 # IncludeIsMainRegex:
 IndentCaseLabels: true
+IndentCaseBlocks: false #version 11+
+IndentExternBlock: false #version 11+
 IndentGotoLabels: true
 IndentPPDirectives: BeforeHash
 IndentWidth: 4
