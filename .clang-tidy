@@ -1,1 +1,10 @@
-Checks: '-*,google-*,cppcoreguidelines-*,clang-*,llvm-*'
+Checks: '
+//-ENABLE-//
+-*,
+google-*,
+cppcoreguidelines-*,
+clang-*,
+llvm-*, 
+
+//-DISABLE-//
+-cppcoreguidelines-owning-memory'
