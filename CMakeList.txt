@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16.0)
+project(ya_cpp VERSION 0.1.0)
+
+add_executable(${PROJECT_NAME} main.cpp)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 17)
