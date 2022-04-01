@@ -1,5 +1,7 @@
-cmake_minimum_required(VERSION 3.16.0)
-project(ya_cpp VERSION 0.1.0)
+cmake_minimum_required(VERSION 3.20.0)
+project(vs_code_cpp VERSION 0.1.0)
 
 add_executable(${PROJECT_NAME} main.cpp)
-set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 17)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 20)
+target_link_libraries(${PROJECT_NAME} PRIVATE tbb)
+target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic -Werror -fpermissive)
